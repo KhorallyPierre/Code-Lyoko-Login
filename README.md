@@ -1,6 +1,6 @@
 # Code-Lyoko-Login
 
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+Welcome to my Code Lyoko fan site! Here, users can pretend to be Lyoko warriors fighting Xana. Log in to unlock your very first mission against a Xana Attack.
 
 ![Code Lyoko Home Page](background2.jpg)
 
