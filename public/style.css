@@ -1,0 +1,50 @@
+* {
+  font-family: 'Monoton', cursive;
+}
+
+.jumbotron, h1, h3 {
+  font-family: 'Monoton', cursive;
+  color: yellow;
+}
+
+h4 {
+  color: orange;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.fa {
+  color: white;
+  width:30px;
+}
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url(img/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+img{
+  height: 300px;
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+
+a {
+  color: yellow;
+}
+
+p {
+  color: white;
+}
+
+.jumbotron {
+background-color: rgba(32, 80, 163, 0.5);
+}
+
+.well {
+  background: rgba(56, 66, 130, 0.5);
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code Lyoko Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel=“stylesheet” href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span>  Your Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm"> Devirtualize</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Profile Details</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+            <section>
+              <h4>Mission 1: Xana has expanded Yumi's head! Help Aelita deactivate
+                the tower before it's too late</h4>
+                <img src="img/xana.jpeg" alt="pic of xana">
+            </section>
+        </div>
+        <div class="col-sm-6">
+          <h3>User Email and Avatar </h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span><%= messages[i].name %></span>
+              <img src="<%= messages[i].img %>" alt="pic">
+              <span class="hide"><%= messages[i].thumbUp %></span>
+              <span class="hide"><%= messages[i].thumbDown%></span>
+              <span class="hide"><%= (messages[i].thumbUp - messages[i].thumbDown)%></span>
+              <span><i class=" hide fa fa-thumbs-up" aria-hidden="true"></i></span>
+              <span><i class=" hide fa fa-thumbs-down" aria-hidden="true"></i></span>
+              <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+        <% if (user.local.email) { %>
+          <form action="/messages" method="POST" enctype='multipart/form-data'>
+            <h3 type="text" value="" name="name"> <%= user.local.email %> </h3>
+            <input type="file" placeholder="" name="file">
+            <button type="submit" value="Upload"> Add </button>
+          </form>
+
+        </div>
+        <% } %>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
