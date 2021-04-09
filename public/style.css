@@ -10,26 +10,33 @@
 h4 {
   color: orange;
   font-size: 20px;
-  text-decoration: underline;
+}
+
+#yumi {
+  font-family: 'RocknRoll One', sans-serif;
+  color: orange;
+  font-size: 20px;
 }
 
 .fa {
   color: white;
-  width:30px;
+  width: 30px;
 }
-body{
-  padding-top:80px;
-  word-wrap:break-word;
+
+body {
+  padding-top: 80px;
+  word-wrap: break-word;
   background-image: url(img/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-img{
+
+img {
   height: 300px;
   text-align: center;
 }
-.hide{
+
+.hide {
   display: none;
 }
 
@@ -42,9 +49,21 @@ p {
 }
 
 .jumbotron {
-background-color: rgba(32, 80, 163, 0.5);
+  background-color: rgba(32, 80, 163, 0.5);
 }
 
 .well {
   background: rgba(56, 66, 130, 0.5);
+}
+
+.xana {
+  background-image: url(img/xanacopy.jpeg);
+  height: 78px;
+  width: 50px;
+  position: absolute;
+  left: 31%;
+  top: 16%;
+  transform: translate(-50%, -50%);
+  background-size: 100%;
+  color: red;
 }

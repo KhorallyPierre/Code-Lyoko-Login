@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span>  Your Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm"> Devirtualize</a>
+        <h1><div class="xana"></div>  Your Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm"> Devirtualize </a>
     </div>
 
     <div class="row">
@@ -22,7 +24,7 @@
         <!-- LOCAL INFORMATION -->
         <div class="col-sm-6">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Profile Details</h3>
+                <h3><span class="fa fa-user"></span> Lyoko Warrior Details </h3>
 
                 <% if (user.local.email) { %>
                     <p>
@@ -38,7 +40,7 @@
 
             </div>
             <section>
-              <h4>Mission 1: Xana has expanded Yumi's head! Help Aelita deactivate
+              <h4 id='yumi'>Mission 1: Xana has expanded Yumi's head! Help Aelita deactivate
                 the tower before it's too late</h4>
                 <img src="img/xana.jpeg" alt="pic of xana">
             </section>

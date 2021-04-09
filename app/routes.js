@@ -30,7 +30,7 @@ module.exports = function(app, passport, db) {
       if(req.files){
         console.log(req.files)
         var file = req.files.file
-        var fileName = file.name
+        var fileName = decodeURIComponent(file.name)
         console.log(fileName)
 
         file.mv('public/uploads/'+fileName, function (err){
@@ -53,8 +53,9 @@ module.exports = function(app, passport, db) {
 
 
     app.delete('/messages', (req, res) => {
-      console.log("trying to delete image", req.body.img)
-      db.collection('messages').findOneAndDelete({img: req.body.img} , (err, result) => {
+      console.log("trying to delete image", decodeURIComponent(req.body.img))
+
+      db.collection('messages').findOneAndDelete({img: decodeURIComponent(req.body.img)} , (err, result) => {
         if (err) return res.send(500, err)
         res.send('Message deleted!')
       })
