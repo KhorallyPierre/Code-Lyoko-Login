@@ -1,6 +1,6 @@
 # Code-Lyoko-Login
 
-Welcome to my Code Lyoko fan site! Here, users can pretend to be Lyoko warriors fighting Xana. Log in to unlock your very first mission against a Xana Attack. Try my deployed site [here]https://fast-chamber-70856.herokuapp.com/
+Welcome to my Code Lyoko fan site! Here, users can pretend to be Lyoko warriors fighting Xana. Log in to unlock your very first mission against a Xana Attack. Try my deployed site [here](https://fast-chamber-70856.herokuapp.com/)
 
 ![Code Lyoko Home Page](background2.jpg)
 
